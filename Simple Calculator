@@ -1,0 +1,40 @@
+                                    // SIMPLE CALCULATOR
+#include <iostream>
+using namespace std;
+int main(){
+  // WE have to do only limited operation on the following :
+  cout<<"\t\t\t\t\tWELCOME TO CALCULATOR\n";
+  float n1,n2;
+  int ask;
+  cout<<"Enter the First number : ";
+  cin>>n1;
+  cout<<"Enter the second number : ";
+  cin>>n2;
+  // operation -> add, sub, div, multi
+  cout<<endl<<"Select the operation you want to perform : "<<endl;
+  cout<<"press 1 : ADDITION\npress 2 : SUBSTRACTION\npress 3 : MULTIPLICATION\npress 4 : DIVISION\n";
+  cout<<"Response : ";
+  cin>>ask;
+  switch(ask){
+    case 1 : {
+      cout<<n1+n2;
+      break;
+    }
+    case 2 : {
+      cout<<n1-n2;
+      break;
+    }
+    case 3 : {
+      cout<<n1*n2;
+      break;
+    }
+    case 4 : {
+      cout<<n1/n2;
+      break;
+    }
+    default : 
+    cout<<"Wrong Input";
+    break;
+  }
+    return 0;
+}
