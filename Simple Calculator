@@ -1,6 +1,67 @@
                                     // SIMPLE CALCULATOR
 #include <iostream>
 using namespace std;
+void next(){
+  float n1,n2;
+  int ask;
+  cout<<"Enter the First number : ";
+  cin>>n1;
+  cout<<"Enter the second number : ";
+  cin>>n2;
+   cout<<endl<<"Select the operation you want to perform : "<<endl;
+  cout<<"press 1 : ADDITION\npress 2 : SUBSTRACTION\npress 3 : MULTIPLICATION\npress 4 : DIVISION\n";
+  cout<<"Response : ";
+  cin>>ask;
+    switch(ask){
+    case 1 : {
+      cout<<n1+n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
+      break;
+    }
+    case 2 : {
+      cout<<n1-n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
+      break;
+    }
+    case 3 : {
+      cout<<n1*n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
+      break;
+    }
+    case 4 : {
+      cout<<n1/n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
+      break;
+    }
+    default : 
+    cout<<"Wrong Input";
+    break;
+  }
+}
 int main(){
   // WE have to do only limited operation on the following :
   cout<<"\t\t\t\t\tWELCOME TO CALCULATOR\n";
@@ -18,18 +79,46 @@ int main(){
   switch(ask){
     case 1 : {
       cout<<n1+n2;
+      cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
       break;
     }
     case 2 : {
       cout<<n1-n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
       break;
     }
     case 3 : {
       cout<<n1*n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
       break;
     }
     case 4 : {
       cout<<n1/n2;
+        cout<<endl<<"Do you want to exit the programme Y/N ? ";
+      char res;
+      cin>>res;
+      if(res=='N'){
+        next();
+      } 
+      else cout<<"Exiting........";
       break;
     }
     default : 
